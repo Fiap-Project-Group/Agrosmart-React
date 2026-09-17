@@ -1,0 +1,402 @@
+.section {
+  display: flex;
+  margin-top: 2.5%;
+}
+
+.container-introduction {
+  margin-right: 8%;
+}
+
+.container-introduction > h1 {
+  max-width: 25vw;
+  font-size: 1.7rem;
+  color: var(--verde-escuro);
+  padding-bottom: 1.5rem;
+}
+
+.p-home-introduction {
+  max-width: 38vw;
+  padding-bottom: 1rem;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--cor-paragrafo);
+}
+
+.plataform-guide {
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding-bottom: 1.4rem;
+  color: var(--verde-claro);
+}
+
+.plataform-guide > a {
+  color: var(--cor-links);
+}
+
+.image-home {
+  width: 40vw;
+  height: 500px;
+  border-radius: 20px;
+  margin-top: 1.2rem;
+}
+
+.image-home > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  filter: saturate(140%);
+}
+
+/* Weather part */
+
+.weather-introduction {
+  display: flex;
+  gap: 20px;
+}
+
+.weather-introduction .leaf-container {
+  width: 112px;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: hsla(150, 40%, 30%, 0.5);
+}
+
+#leaf-icon {
+  font-size: 60px;
+  color: var(--verde-claro);
+}
+
+.weather-text > h2 {
+  padding-bottom: 1rem;
+  font-size: 1.65rem;
+  color: var(--verde-claro);
+}
+
+.weather-text > p {
+  font-size: 1.15rem;
+  color: var(--cor-paragrafo);
+}
+
+/* cards */
+
+/* cards layout */
+
+.cards-container {
+  display: flex;
+  gap: 50px;
+  margin-top: 3.2rem;
+}
+
+.cards {
+  width: 22vw;
+  /* min-height: 580px; */
+  border-radius: 20px;
+  box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.18);
+  padding: 2rem;
+}
+
+/* card 1 */
+
+.cards-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#icon-1,
+#icon-2 {
+  font-size: 45px;
+  color: var(--verde-claro);
+  margin-bottom: 1.2rem;
+}
+
+.cards-header h3 {
+  font-size: 1.3rem;
+  color: var(--verde-claro);
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+
+.cards-info {
+  width: 100%;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.info-label,
+.info-value {
+  font-weight: 700;
+}
+
+.info-label {
+  font-size: 1.15rem;
+  color: var(--verde-escuro);
+}
+
+.info-value {
+  font-size: 2rem;
+  color: var(--verde-claro);
+}
+
+/* card 2 */
+
+.planting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.planting-title {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--verde-escuro);
+  padding-bottom: 0.8rem;
+}
+
+.planting-text {
+  color: var(--verde-escuro);
+}
+
+.check-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--verde-claro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.18);
+  flex-shrink: 0;
+}
+
+.check-icon i {
+  color: var(--branco);
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1650px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  .container-introduction {
+    margin: 0;
+    margin-bottom: 5%;
+  }
+
+  .container-introduction > h1 {
+    max-width: 825px;
+    font-size: 2rem;
+  }
+
+  .p-home-introduction {
+    max-width: 787px;
+    font-size: 1.5rem;
+  }
+
+  .plataform-guide {
+    font-size: 1.8rem;
+  }
+
+  .image-home {
+    width: 825px;
+  }
+
+  /* parte do clima  */
+
+  .weather-introduction .leaf-container {
+    width: 130px;
+    height: 130px;
+  }
+
+  #leaf-icon {
+    font-size: 70px;
+  }
+
+  .weather-text > h2 {
+    font-size: 2rem;
+  }
+
+  .weather-text > p {
+    width: 665px;
+    font-size: 1.5rem;
+  }
+
+  /* cards layout */
+
+  .cards-container {
+    justify-content: space-between;
+  }
+
+  .cards {
+    width: 400px;
+  }
+
+  /* card 1 */
+
+  #icon-1,
+  #icon-2 {
+    font-size: 55px;
+  }
+
+  .cards-header h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .p-home-introduction {
+    width: 95vw;
+  }
+
+  .image-home {
+    width: 95vw;
+    margin-bottom: 40px;
+  }
+
+  .weather-text > h2 {
+    width: 20vw;
+  }
+
+  .weather-text > p {
+    width: 70vw;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+    width: 90vw;
+  }
+
+  .cards-header > h3 {
+    font-size: 2rem;
+  }
+
+  .info-row .info-label {
+    font-size: 1.6rem;
+  }
+
+  .info-row .info-value {
+    font-size: 2.2rem;
+  }
+
+  .planting-row .planting-title {
+    font-size: 1.6rem;
+  }
+
+  .planting-row .planting-text {
+    font-size: 1.3rem;
+  }
+
+  .planting-row .check-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .check-icon i {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .section {
+    margin: 50px 0;
+  }
+
+  .container-introduction > h1 {
+    text-align: center;
+  }
+
+  .p-home-introduction {
+    text-align: center;
+  }
+
+  .plataform-guide {
+    text-align: center;
+  }
+
+  .image-home {
+    margin: 0 auto;
+    width: 90vw;
+    height: 350px;
+  }
+  .weather-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weather-text > h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .weather-text > p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .container-introduction > h1 {
+    font-size: 1.4rem;
+  }
+
+  .p-home-introduction {
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+  }
+
+  .plataform-guide {
+    font-size: 1.3rem;
+  }
+
+  .image-home {
+    display: none;
+  }
+
+  .weather-text > p {
+    font-size: 1.2rem;
+  }
+
+  .cards-header > h3 {
+    font-size: 1.4rem;
+  }
+
+  .info-row .info-label {
+    font-size: 1.3rem;
+  }
+
+  .info-row .info-value {
+    font-size: 1.3rem;
+  }
+
+  .planting-row .planting-title {
+    font-size: 1.3rem;
+  }
+
+  .planting-row .planting-text {
+    font-size: 1.1rem;
+  }
+
+  .planting-row .check-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .check-icon i {
+    font-size: 1rem;
+  }
+}
