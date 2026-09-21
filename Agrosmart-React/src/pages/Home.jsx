@@ -1,4 +1,5 @@
 import ImageHome from "../assets/images/Home-image.jpg";
+import Chatbot from "../components/Chatbot/Chatbot"
 import "../Css/Home.css";
 
 function Home() {
@@ -132,6 +133,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <Chatbot/>
     </main>
   );
 }

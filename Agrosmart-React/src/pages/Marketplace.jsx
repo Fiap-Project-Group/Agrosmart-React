@@ -12,6 +12,7 @@ import kitPlantio from "../assets/images/products-imgs/KitDePlantio-image.jpg";
 import Motobomba from "../assets/images/products-imgs/MotoBomba.jpg";
 import EstacaoMeteologica from "../assets/images/products-imgs/EstacaoMeteologica-image.jpg";
 
+import Chatbot from "../components/Chatbot/Chatbot"
 
 
 
@@ -247,6 +248,7 @@ function Marketplace() {
           </div>
         </div>
       </section>
+      <Chatbot/>
     </main>
   );
 }
