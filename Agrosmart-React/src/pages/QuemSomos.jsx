@@ -1,4 +1,5 @@
 import QuemSomosImg from "../assets/images/QuemSomos-image.jpg";
+import Chatbot from "../components/Chatbot/Chatbot"
 import FAQ from "../components/FAQ/Fqa";
 import "../Css/QuemSomos.css";
 
@@ -45,6 +46,7 @@ function QuemSomos() {
       <section>
         <FAQ/>
       </section>
+      <Chatbot/>
     </main>
   );
 }

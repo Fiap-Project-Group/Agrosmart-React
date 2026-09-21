@@ -1,4 +1,5 @@
 import FaleConoscoIMG from "../assets/images/FaleConosco-image.jpg";
+import Chatbot from "../components/Chatbot/Chatbot"
 import "../Css/FaleConosco.css";
 
 function FaleConosco() {
@@ -98,6 +99,7 @@ function FaleConosco() {
           <img src={FaleConoscoIMG} alt="imagem de uma atendente" />
         </div>
       </section>
+      <Chatbot/>
     </main>
   );
 }
