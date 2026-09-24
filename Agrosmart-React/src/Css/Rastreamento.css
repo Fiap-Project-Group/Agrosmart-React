@@ -1,5 +1,5 @@
 .section-rastreamento {
-  margin-top: 2.5%;
+  margin-top: 30px;
 }
 
 .display-container {
@@ -189,9 +189,6 @@
 }
 
 @media screen and (max-width: 1500px) {
-  .section-rastreamento {
-    margin-top: 50px;
-  }
   .display-container {
     flex-direction: column;
     margin-bottom: 50px;
@@ -201,16 +198,18 @@
   .tracking-infos > h1 {
     width: 100%;
     text-align: center;
+    font-size: 1.6rem;
   }
 
   .tracking-infos > p {
     width: 605px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .tracking-infos > hr {
     width: 100%;
+    height: 8px;
   }
 
   .delivery-card {
@@ -223,7 +222,7 @@
   }
 
   .map-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 
@@ -234,21 +233,19 @@
   }
 
   .tracking-map {
-    max-width: 75%;
-    min-width: 890px;
+    max-width: 890px;
     margin: 0 auto;
   }
 
   .driver-datails {
     width: 100%;
-    max-width: 75%;
-    min-width: 890px;
+    max-width: 890px;
     margin: 0 auto;
     min-height: 580px;
   }
 
   .driver-datails > h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .details-icon {
@@ -267,20 +264,25 @@
   }
 
   .datails-content > h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .datails-content > p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 980px) {
   .delivery-card {
     max-width: 750px;
-    min-height: 40vh;
+    min-height: 10vh;
     flex-direction: column;
+    justify-content: center;
     gap: 4rem;
+  }
+
+  .truck-icon-container {
+    display: none;
   }
 
   .tracking-map-container {
@@ -290,15 +292,15 @@
   }
 
   .tracking-map {
-    min-width: 37.5vw;
+    max-width: 750px;
   }
 
   .driver-datails {
-    min-width: 37.5vw;
+    max-width: 750px;
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 810px) {
   .tracking-infos > h1 {
     width: 100%;
     text-align: center;
@@ -315,8 +317,8 @@
   }
 
   .delivery-card {
-    max-width: 280px;
-    min-height: 75vh;
+    min-width: 300px;
+    min-height: 600px;
     flex-direction: column;
     gap: 4rem;
   }
@@ -339,8 +341,19 @@
     font-size: 1.2rem;
   }
 
+  .driver-datails {
+    height: 972px;
+    min-width: 300px;
+    max-width: 750px;
+  }
+
   .driver-datails > h3 {
     font-size: 2rem;
+  }
+
+  .datails-items {
+    display: flex;
+    flex-direction: column;
   }
 
   .details-icon {
@@ -364,20 +377,9 @@
   .driver-subcontainer-3 {
     margin-bottom: 5rem;
   }
-}
 
-@media screen and (max-width: 647px) {
   .driver-subcontainer-2,
   .driver-subcontainer-1 {
     margin-bottom: 2.5rem;
-  }
-
-  .driver-datails {
-    height: 90vh;
-  }
-
-  .datails-items {
-    display: flex;
-    flex-direction: column;
   }
 }
