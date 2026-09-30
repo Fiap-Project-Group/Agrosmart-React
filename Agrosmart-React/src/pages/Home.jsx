@@ -1,5 +1,5 @@
 import ImageHome from "../assets/images/Home-image.jpg";
-import Chatbot from "../components/Chatbot/Chatbot"
+import Agrobot from "../components/Agrobot/Agrobot"
 import "../Css/Home.css";
 
 function Home() {
@@ -133,7 +133,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <Chatbot/>
+      <Agrobot />
     </main>
   );
 }

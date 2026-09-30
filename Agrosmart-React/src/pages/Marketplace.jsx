@@ -9,10 +9,10 @@ import RacaoPremium from "../assets/images/products-imgs/RacaoPremium-image.jpg"
 import Drone from "../assets/images/products-imgs/Drone-image.jpg";
 import FertilizanteOrganico from "../assets/images/products-imgs/FertilizanteOrganico-image.jpg";
 import kitPlantio from "../assets/images/products-imgs/KitDePlantio-image.jpg";
-import Motobomba from "../assets/images/products-imgs/MotoBomba.jpg";
+import Motobomba from "../assets/images/products-imgs/Motobomba.jpg";
 import EstacaoMeteologica from "../assets/images/products-imgs/EstacaoMeteologica-image.jpg";
 
-import Chatbot from "../components/Chatbot/Chatbot"
+import Agrobot from "../components/Agrobot/Agrobot"
 
 
 
@@ -248,7 +248,7 @@ function Marketplace() {
           </div>
         </div>
       </section>
-      <Chatbot/>
+      <Agrobot />
     </main>
   );
 }

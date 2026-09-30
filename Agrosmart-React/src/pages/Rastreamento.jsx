@@ -1,5 +1,5 @@
 import Maparotas from "../assets/images/MapaRotas.png";
-import Chatbot from "../components/Chatbot/Chatbot";
+import Agrobot from "../components/Agrobot/Agrobot";
 import "../Css/Rastreamento.css";
 
 function Rastreamento() {
@@ -133,7 +133,7 @@ function Rastreamento() {
           </div>
         </div>
       </section>
-      <Chatbot/>
+      <Agrobot />
     </main>
   );
 }

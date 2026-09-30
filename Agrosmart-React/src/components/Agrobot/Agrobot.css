@@ -29,7 +29,7 @@
   width: 360px;
   height: 500px;
 
-  background: var(--color-white);
+  background: var(--branco);
 
   border-radius: 20px;
 
@@ -78,7 +78,7 @@
 }
 
 .bot-message {
-  background: none;
+  background: #f1f1f1;
 
   padding: 10px;
 
@@ -173,7 +173,7 @@
 
   border-top: 1px solid #ddd;
 
-  background: var(--color-white);
+  background: var(--branco);
 }
 
 #agrobot-input {
@@ -197,7 +197,7 @@
 
   background: #597956;
 
-  color: var(--color-white);
+  color: var(--branco);
 
   cursor: pointer;
 }
