@@ -10,7 +10,7 @@
 .container-introduction > h1 {
   max-width: 25vw;
   font-size: 1.7rem;
-  color: var(--verde-escuro);
+  color: var(--color-text-primary);
   padding-bottom: 1.5rem;
 }
 
@@ -19,18 +19,18 @@
   padding-bottom: 1rem;
   font-size: 1.15rem;
   line-height: 1.7;
-  color: var(--cor-paragrafo);
+  color: var(--color-text-secondary);
 }
 
 .plataform-guide {
   font-weight: 700;
   font-size: 1.6rem;
   padding-bottom: 1.4rem;
-  color: var(--verde-claro);
+  color: var(--color-primary);
 }
 
 .plataform-guide > a {
-  color: var(--cor-links);
+  color: var(--color-links);
 }
 
 .image-home {
@@ -67,21 +67,19 @@
 
 #leaf-icon {
   font-size: 60px;
-  color: var(--verde-claro);
+  color: var(--color-primary);
 }
 
 .weather-text > h2 {
   padding-bottom: 1rem;
   font-size: 1.65rem;
-  color: var(--verde-claro);
+  color: var(--color-primary);
 }
 
 .weather-text > p {
   font-size: 1.15rem;
-  color: var(--cor-paragrafo);
+  color: var(--color-text-secondary );
 }
-
-/* cards */
 
 /* cards layout */
 
@@ -96,6 +94,7 @@
   /* min-height: 580px; */
   border-radius: 20px;
   box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.18);
+  background-color: var(--color-white);
   padding: 2rem;
 }
 
@@ -110,13 +109,13 @@
 #icon-1,
 #icon-2 {
   font-size: 45px;
-  color: var(--verde-claro);
+  color: var(--color-primary);
   margin-bottom: 1.2rem;
 }
 
 .cards-header h3 {
   font-size: 1.3rem;
-  color: var(--verde-claro);
+  color: var(--color-primary);
   text-align: center;
   margin-bottom: 2.2rem;
 }
@@ -139,12 +138,12 @@
 
 .info-label {
   font-size: 1.15rem;
-  color: var(--verde-escuro);
+  color: var(--color-text-primary);
 }
 
 .info-value {
   font-size: 2rem;
-  color: var(--verde-claro);
+  color: var(--color-primary);
 }
 
 /* card 2 */
@@ -159,19 +158,20 @@
 .planting-title {
   font-weight: 700;
   font-size: 1.15rem;
-  color: var(--verde-escuro);
+  color: var(--color-text-primary);
   padding-bottom: 0.8rem;
 }
 
 .planting-text {
-  color: var(--verde-escuro);
+  color: var(--color-text-secondary);
 }
 
 .check-icon {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: var(--verde-claro);
+  background-color: var(--color-primary);
+  color: var(--color-white);
   display: flex;
   align-items: center;
   justify-content: center;

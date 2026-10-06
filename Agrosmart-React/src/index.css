@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
   margin: 0;
@@ -8,17 +8,101 @@
   font-family: "Inter", sans-serif;
 }
 
-
-main{
+main {
   margin: 0 3%;
 }
 
-:root{
-  --verde-escuro: #081c15;
+body {
+  overflow-x: hidden;
+  /* color: var(--color-text-primary); */
+  background-color: var(--color-background);
+}
+
+:root {
+  /* =========================
+       CORES PRINCIPAIS
+       ========================= */
+
+  --color-primary: #004b23;
+  --color-primary-dark: #081c15;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* =========================
+       CORES DE TEXTO
+       ========================= */
+
+  --color-text-primary: #081c15;
+  --color-text-secondary: #5c5e5e;
+  --color-links: #20c68c;
+
+  /* =========================
+       CORES DE FUNDO
+       ========================= */
+
+  --color-background: #ffffff;
+  --color-background-light: #d9d9d9;
+
+  /* =========================
+       CORES COM TRANSPARÊNCIA
+       ========================= */
+
+  --color-primary-transparent: #004b2320;
+  --color-green-transparent: #00ff8e20;
+  --color-green-soft: #2d6a4f85;
+
+  --color-shadow-light: #00000025;
+  --color-shadow-medium: #00000030;
+
+  /* =========================
+       BORDER RADIUS
+       ========================= */
+
+  --radius-small: 10px;
+  --radius-medium: 20px;
+  --radius-large: 30px;
+
+  /* =========================
+       SOMBRAS
+       ========================= */
+
+  --shadow-small: 0 2px 5px var(--color-shadow-medium);
+  --shadow-medium: 0 5px 10px var(--color-shadow-medium);
+  --shadow-card: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+  /* =========================
+       TRANSIÇÕES
+       ========================= */
+
+  --transition-fast: 0.2s ease;
+  --transition-default: 0.3s ease-in-out;
+
+  /* cores antigas */
+  /* --verde-escuro: #081c15;
   --verde-claro: #004b23;
   --cor-paragrafo: #5c5e5e;
   --cor-links: #00a14b;
   --cor-input: #d9d9d9;
-  --branco: #ffffff;
+  --branco: #ffffff; */
+}
 
+.dark {
+  --color-background: #081c15;
+  --color-background-light: #1b3027;
+
+  --color-text-primary: #f1f5f2;
+  --color-text-secondary: #b8c5be;
+
+  --color-white: #14251d;
+
+  --color-primary: #4caf7d;
+  --color-primary-dark: #35a568;
+
+  --color-primary-transparent: #4caf7d20;
+  --color-green-transparent: #4caf7d20;
+  --color-green-soft: #2d6a4f;
+
+  --color-shadow-light: #00000040;
+  --color-shadow-medium: #00000060;
 }

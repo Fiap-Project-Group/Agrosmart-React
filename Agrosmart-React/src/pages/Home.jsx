@@ -16,7 +16,8 @@ function Home() {
             Menos desperdício. Mais colheita. Mais vida.
           </p>
           <p className="plataform-guide">
-            Acesse - <a href="#">Guia da Plataforma (add)</a>
+            {/* adicionar o link da fase!! */}
+            Acesse - <a href="#">Guia da Plataforma </a>
           </p>
           <div className="image-home">
             <img src={ImageHome} alt="Imagem de um Agricultor trabalhando" />
