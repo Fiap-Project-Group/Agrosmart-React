@@ -12,14 +12,14 @@
   width: 15vw;
   font-size: 1.8rem;
   letter-spacing: 10%;
-  color: var(--verde-claro);
+  color: var(--color-primary);
   padding-bottom: 1.3rem;
 }
 
 .tracking-infos > p {
   width: 42vw;
   font-size: 1.15rem;
-  color: var(--cor-paragrafo);
+  color: var(--color-text-secondary);
   padding-bottom: 2rem;
 }
 
@@ -27,7 +27,7 @@
   width: 10vw;
   height: 1vh;
   border-radius: 20px;
-  background-color: var(--verde-claro);
+  background-color: var(--color-primary);
   margin-bottom: 1.8rem;
 }
 
@@ -41,6 +41,7 @@
   align-items: center;
   padding: 2rem;
   gap: 1rem;
+  background-color: var(--color-white);
 }
 
 .truck-icon-container {
@@ -56,7 +57,7 @@
 
 .truck-icon-container i {
   font-size: 3rem;
-  color: var(--verde-claro);
+  color: var(--color-primary);
 }
 
 .delivery-infos {
@@ -73,24 +74,24 @@
 
 .delivery-items > h3 {
   font-size: 1.1rem;
-  color: var(--verde-escuro);
+  color: var(--color-text-primary);
   line-height: 1.4;
 }
 
 .delivery-items > p {
   padding-top: 1.2rem;
   font-size: 1rem;
-  color: var(--cor-paragrafo);
+  color: var(--color-text-secondary);
   line-height: 1.5;
 }
 
 .delivery-items > span {
-  color: var(--verde-claro);
+  color: var(--color-primary);
 }
 
 .map-title {
   font-size: 1.4rem;
-  color: var(--verde-escuro);
+  color: var(--color-text-primary);
   margin-top: 1rem;
 }
 
@@ -119,12 +120,13 @@
   min-height: 500px;
   border-radius: 20px;
   box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.18);
+  background-color: var(--color-white);
   padding: 1.2rem;
 }
 
 .driver-datails > h3 {
   font-size: 1.5rem;
-  color: var(--verde-claro);
+  color: var(--color-primary);
   margin-bottom: 2.5rem;
   text-align: center;
 }
@@ -149,7 +151,7 @@
 
 .details-icon i {
   font-size: 2rem;
-  color: var(--verde-claro);
+  color: var(--color-primary);
 }
 
 .datails-content {
@@ -159,13 +161,13 @@
 
 .datails-content > h3 {
   font-size: 1.1rem;
-  color: var(--verde-escuro);
+  color: var(--color-text-primary);
   padding-top: 0.5rem;
 }
 
 .datails-content > p {
   font-size: 1rem;
-  color: var(--cor-paragrafo);
+  color: var(--color-text-secondary);
   padding-top: 0.5rem;
 }
 
@@ -185,7 +187,7 @@
 }
 
 .datails-content > span {
-  color: var(--verde-claro);
+  color: var(--color-primary);
 }
 
 @media screen and (max-width: 1500px) {

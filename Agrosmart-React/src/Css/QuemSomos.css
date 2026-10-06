@@ -9,14 +9,14 @@
 .quem-somos-titles > h2 {
   width: 12vw;
   letter-spacing: 10%;
-  color: var(--verde-claro);
+  color: var(--color-primary);
   padding-bottom: 20px;
 }
 
 .quem-somos-titles > h1 {
   width: 33vw;
   font-size: 2.4rem;
-  color: var(--verde-escuro);
+  color: var(--color-text-primary);
   padding-bottom: 10px;
 }
 
@@ -24,14 +24,14 @@
   width: 13.3vw;
   height: 1vh;
   border-radius: 20px;
-  background-color: var(--verde-claro);
+  background-color: var(--color-primary);
   margin-bottom: 40px;
 }
 
 .paragrath {
   width: 42vw;
   font-size: 1.1rem;
-  color: var(--cor-paragrafo);
+  color: var(--color-text-secondary);
   padding-bottom: 50px;
   line-height: 1.4;
 }

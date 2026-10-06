@@ -9,6 +9,7 @@
   height: 620px;
   border-radius: 20px;
   box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.2);
+  background-color: var(--color-white);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -16,7 +17,7 @@
 }
 
 .FQA-pergunta > p {
-  color: var(--verde-claro);
+  color: var(--color-primary);
   font-size: 1.6rem;
   font-weight: 600;
   max-width: 240px;
@@ -26,7 +27,7 @@
 }
 
 .FQA-respostas > p {
-  color: var(--cor-paragrafo);
+  color: var(--color-text-secondary);
   font-size: 1.1rem;
   max-width: 320px;
   text-align: center;
@@ -37,7 +38,7 @@
   font-size: 2rem;
   font-weight: 600;
   padding-bottom: 5rem;
-  color: var(--verde-escuro);
+  color: var(--color-primary-dark);
   padding-left: 2.5%;
 }
 

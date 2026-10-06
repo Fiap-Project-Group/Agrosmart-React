@@ -7,6 +7,24 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
 
+  // troca de tema
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("theme") === "dark";
+  });
+
+  // troca de tema
+  useEffect(() => {
+    document.body.classList.toggle("dark", darkMode);
+
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
+  }, [darkMode]);
+
+  // troca de tema
+  function toggleTheme() {
+    setDarkMode((prev) => !prev);
+  }
+
+
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
 
@@ -82,6 +100,16 @@ function Navbar() {
             </ul>
 
             <div className="header-actions">
+              <button
+                className="theme-button"
+                onClick={toggleTheme}
+                aria-label="Alterar tema"
+              >
+                <i
+                  className={darkMode ? "fa-solid fa-sun" : "fa-solid fa-moon"}
+                ></i>
+              </button>
+
               <button id="register-button">Criar conta</button>
               <button id="login-button">Entrar</button>
             </div>

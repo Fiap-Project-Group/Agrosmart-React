@@ -11,14 +11,14 @@
   width: 20vw;
   padding-bottom: 1.2rem;
   font-size: 1.6rem;
-  color: var(--verde-claro);
+  color: var(--color-primary);
 }
 
 .contact-texts > h1 {
   max-width: 40vw;
   font-size: 2.5rem;
   padding-bottom: 1rem;
-  color: var(--verde-escuro);
+  color: var(--color-text-primary);
 }
 
 .contact-texts > hr {
@@ -26,7 +26,7 @@
   height: 8px;
   border: none;
   border-radius: 20px;
-  background-color: var(--verde-claro);
+  background-color: var(--color-primary);
 }
 
 .contact-texts > p {
@@ -35,14 +35,14 @@
   padding-top: 1.6rem;
   font-size: 1.1rem;
   line-height: 1.7;
-  color: var(--cor-paragrafo);
+  color: var(--color-text-secondary);
 }
 
 .contact-channel > h3 {
   width: 20vw;
   padding-top: 1.2rem;
   font-size: 1.3rem;
-  color: var(--verde-claro);
+  color: var(--color-primary);
 }
 
 .contact-info-layout {
@@ -52,12 +52,15 @@
   gap: 2rem;
 }
 
-.contact-info-layout > h4 {
-  padding-bottom: 0.8rem;
+/* adicionar cor!!! tema escuro */
+.contact-info-layout > div > h4 {
+  padding-bottom: 0.2rem;
+  color: var(--color-text-primary);
 }
 
 .contact-info-layout > div > p {
   margin-top: 0.8rem;
+  color: var(--color-text-secondary);
 }
 
 .contact-form > h3 {
@@ -65,7 +68,7 @@
   padding-top: 2rem;
   padding-bottom: 1rem;
   font-size: 1.3rem;
-  color: var(--verde-claro);
+  color: var(--color-primary);
 }
 
 .form-input-container {
@@ -80,9 +83,14 @@
   padding-left: 1.3rem;
   border: none;
   border-radius: 20px;
-  background-color: var(--cor-input);
+  background-color: var(--color-background-light);
+  color: var(--color-text-primary);
   font-size: 1rem;
   outline: none;
+}
+
+.form-input::placeholder, .text-area-message::placeholder{
+  color: var(--color-text-secondary);
 }
 
 .text-area-message {
@@ -102,8 +110,8 @@
   height: 35px;
   margin-top: 0.5rem;
   border-radius: 20px;
-  background-color: var(--verde-claro);
-  color: var(--branco);
+  background-color: var(--color-primary);
+  color: var(--color-white);
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
