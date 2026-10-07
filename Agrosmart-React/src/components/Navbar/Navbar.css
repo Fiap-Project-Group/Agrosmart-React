@@ -205,7 +205,7 @@
     justify-content: flex-start;
     gap: 2.5rem;
     padding: 6rem 1.5rem 2rem;
-    background-color: var(--cor-links);
+    background-color: var(--color-primary);
     box-shadow: -10px 0 20px rgba(0, 0, 0, 0.25);
     overflow-y: auto;
     z-index: 1001;
@@ -233,13 +233,13 @@
   .navbar-items {
     display: block;
     width: 100%;
-    color: var(--branco);
+    color: var(--color-white);
     font-size: 1.25rem;
     padding: 6px 0;
   }
 
   .navbar-items:hover {
-    color: var(--verde-escuro);
+    color: var(--color-primary-dark);
   }
 
   .header-actions {
@@ -256,7 +256,7 @@
   }
 
   #register-button {
-    color: var(--branco);
+    color: var(--color-white);
     border: 2px solid rgba(255, 255, 255, 0.6);
     border-radius: 20px;
     padding: 10px 20px;
@@ -264,8 +264,8 @@
   }
 
   #login-button {
-    background-color: var(--branco);
-    color: var(--verde-claro);
+    background-color: var(--color-white);
+    color: var(--color-primary);
   }
 
   .navbar-backdrop {
