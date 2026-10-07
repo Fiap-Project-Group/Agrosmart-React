@@ -1,8 +1,31 @@
 import FaleConoscoIMG from "../assets/images/FaleConosco-image.jpg";
 import Agrobot from "../components/Agrobot/Agrobot"
 import "../Css/FaleConosco.css";
+import { useState } from "react";
 
 function FaleConosco() {
+  const [nome, setnome] = useState("")
+  const [enviado , setEnvido] = useState(false)
+
+  function handleSubmit(event){
+    event.preventDefault();
+    const partes = nome.trim().split(/\s+/);
+
+    if (partes.length < 2){
+      alert("Digite nome e sobrenome!");
+      return;
+    }
+    const nomeValido = partes.every((parte) => parte.length >= 2);
+    
+    if (!nomeValido){
+      alert("Nome e sobrenome devem ter pelo menos 2 letras")
+      return;
+    }
+    setnome("");
+    setEnvido(true );
+    console.log("Formulário enviado com sucesso!")
+  }
+
   return (
     <main>
       <section className="section-FaleConosco">
@@ -59,17 +82,20 @@ function FaleConosco() {
             <h3>Mande sua Mensagem</h3>
 
             <div className="form-to-contact">
-              <form action="">
+              {enviado ? (<p>Formulário enviado com sucesso!</p>): (
+              <form onSubmit={handleSubmit}>
                 <div className="form-input-container">
                   <input
                     type="text"
                     name="Nome"
+                    value={nome}
+                    onChange={(event) => setnome(event.target.value)}
                     className="form-input"
                     id="name"
                     required
-                    placeholder="Digite seu nome"
+                    placeholder="Digite nome e sobrenome"
                   />
-
+               
                   <input
                     type="Email"
                     name="email"
@@ -88,10 +114,11 @@ function FaleConosco() {
                   />
 
                   <div className="button-container">
-                    <button>Enviar</button>
+                    <button type="submit">Enviar</button>
                   </div>
                 </div>
               </form>
+              )}
             </div>
           </div>
         </div>
