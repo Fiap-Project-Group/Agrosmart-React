@@ -4,6 +4,7 @@ import Rastreamento from "../pages/Rastreamento";
 import QuemSomos from "../pages/QuemSomos";
 import FaleConosco from "../pages/FaleConosco";
 import Marketplace from "../pages/Marketplace";
+import Error from "../pages/Error";
 
 function Rotas() {
   return (
@@ -22,6 +23,9 @@ function Rotas() {
       </Route>
       <Route path="/Marketplace" element={<Marketplace />}>
         Marketplace
+      </Route>
+      <Route path="*" element={<Error/>}>
+      404 - Página não encontrada
       </Route>
     </Routes>
   );

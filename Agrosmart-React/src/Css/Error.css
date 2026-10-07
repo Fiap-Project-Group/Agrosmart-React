@@ -1,0 +1,53 @@
+.Error-container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Error-container > h1 {
+  font-weight: 700;
+  font-size: 5rem;
+  color: var(--color-text-primary);
+  padding-bottom: 0.5rem;
+}
+.Error-container > p {
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+  padding-bottom: 1.2rem;
+}
+.Error-container > button {
+  padding: 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transition: 0.2s ease-in-out;
+}
+.Error-container > button > a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.Error-container > button:hover {
+  background-color: var(--color-links);
+}
+
+@media (max-width: 500px) {
+  .Error-container > h1 {
+    font-size: 4rem;
+  }
+  .Error-container > p {
+    text-align: center;
+    font-size: 1.1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  .Error-container > button {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+}
