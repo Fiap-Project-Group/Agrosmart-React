@@ -45,6 +45,7 @@
 @media (max-width: 1750px) {
   .section-quem-somos {
     margin-top: 80px;
+    gap: 0;
   }
 
   .quem-somos-titles > hr {
@@ -89,14 +90,8 @@
     justify-content: center;
   }
 }
- 
-@media (max-width: 1050px) {
-  .section-quem-somos {
-    margin-top: 150px;
-    height: 70vh;
-    gap: 0;
-  }
 
+@media (max-width: 1050px) {
   .quem-somos-titles > hr {
     width: 220px;
     margin: 0 auto 40px;
@@ -110,84 +105,43 @@
   }
 
   .quem-somos-titles > h1 {
-    width: 75%;
+    width: 645px;
     margin: 0 auto;
     text-align: center;
   }
 
   .paragrath {
-    width: 80vw;
+    width: 700px;
   }
 }
 
-@media (max-width: 872px) {
-  .section-quem-somos {
-    margin-top: 20vh;
-    height: 70vh;
-  }
-
+@media (max-width: 782px) {
   .quem-somos-titles > h1 {
-    width: 100%;
+    width: 580px;
   }
-}
-
-@media (max-width: 700px) {
-  .section-quem-somos {
-    margin-top: 30vh;
-    margin-bottom: 25vh;
-  }
-
-  .quem-somos-titles > h1 {
-    width: 80%;
-  }
-}
-
-@media (max-width: 570px) {
-  .quem-somos-titles > h2 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 1.2rem;
-  }
-
-  .quem-somos-titles > h1 {
-    font-size: 1.5rem;
-  }
-
   .paragrath {
+    width: 560px;
+  }
+}
+
+@media (max-width: 620px) {
+  .quem-somos-titles > h1 {
+    width: 400px;
+  }
+  .paragrath {
+    width: 420px;
+  }
+}
+@media (max-width: 475px) {
+   .quem-somos-titles > h1 {
+    width: 300px;
+    font-size: 1.6rem;
+  }
+  .quem-somos-titles > h2{
+    font-size: 1.4rem;
+  }
+  .paragrath {
+    width: 310px;
     font-size: 1.2rem;
   }
-
-  .section-quem-somos {
-    margin-top: 20vh;
-    margin-bottom: 15vh;
-  }
 }
-
-@media (max-width: 500px) {
-  .section-quem-somos {
-    margin-top: 200px;
-    margin-bottom: 200px;
-  }
-}
-
- @media (max-width: 456px) {
-  .section-quem-somos {
-    margin-top: 270px;
-    margin-bottom: 250px;
-  }
-}
-
-@media (max-width: 410px) {
-  .section-quem-somos {
-    margin-top: 350px;
-    margin-bottom: 280px;
-  }
-}
-
-@media (max-width: 350px) {
-  .section-quem-somos {
-    margin-top: 400px;
-    margin-bottom: 400px;
-  }
-} 
