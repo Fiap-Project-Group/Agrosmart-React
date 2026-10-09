@@ -43,7 +43,7 @@
 
 @media (max-width: 1750px) {
   .FQA-title {
-    margin-top: 5rem;
+    margin-top: 20px;
     padding: 0 0 5rem;
     font-size: 2.5rem;
     display: flex;
@@ -52,18 +52,18 @@
 
   .FQA-cards {
     width: 95vw;
-    height: 520px;
+    height: 450px;
   }
 
   .FQA-pergunta > p {
-    font-size: 2rem;
-    max-width: 50vw;
+    font-size: 2.2rem;
+    max-width: 700px;
   }
 
   .FQA-respostas > p {
     font-size: 1.5rem;
-    max-width: 50vw;
-    margin: 30px auto 0;
+    max-width: 700px;
+    margin: 10px auto 0;
   }
 
   .FQA-container {
@@ -75,74 +75,50 @@
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 900px) {
+  .FQA-pergunta > p {
+    max-width: 500px;
+  }
+
+  .FQA-respostas > p {
+    max-width: 500px;
+    margin: 10px auto 0;
+  }
+  .FQA-cards {
+    height: 580px;
+  }
+}
+@media (max-width: 650px) {
   .FQA-title {
-    margin-top: 5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .FQA-pergunta > p {
+    max-width: 300px;
+  }
+
+  .FQA-respostas > p {
+    max-width: 400px;
   }
 
   .FQA-cards {
-    height: 720px;
+    height: 700px;
   }
 }
-
-@media (max-width: 872px) {
+@media (max-width: 476px) {
   .FQA-title {
-    margin-top: 180px;
+   font-size: 1.6rem;
   }
-}
-
-@media (max-width: 740px) {
-  .FQA-cards {
-    height: 860px;
-  }
-}
-
-@media (max-width: 580px) {
-  .FQA-title {
+  .FQA-pergunta > p {
     font-size: 1.6rem;
-  }
-
-  .FQA-pergunta > p {
-    font-size: 2rem;
-    max-width: 50vw;
-  }
-
-  .FQA-respostas > p {
-    font-size: 1.35rem;
-    max-width: 50vw;
-    margin: 30px auto 0;
-  }
-}
-
-@media (max-width: 500px) {
-  .FQA-pergunta > p {
-    font-size: 1.5rem;
-    max-width: 50vw;
+    max-width: 300px;
   }
 
   .FQA-respostas > p {
     font-size: 1.2rem;
-    max-width: 50vw;
-    margin: 30px auto 0;
+    max-width: 260px;
   }
-
   .FQA-cards {
-    height: 800px;
-  }
-}
-
-@media (max-width: 468px) {
-  .FQA-cards {
-    height: 950px;
-  }
-
-  .FQA-title{
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 380px) {
-  .FQA-cards {
-    height: 980px;
+    height: 660px;
   }
 }
