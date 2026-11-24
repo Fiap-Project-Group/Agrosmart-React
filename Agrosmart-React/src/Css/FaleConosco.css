@@ -97,6 +97,46 @@
   display: block;
   height: 80px;
   width: 95%;
+  padding-top: 0.8rem;
+  resize: none;
+}
+
+.form-field {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(23.2vw + 1.2rem);
+}
+
+.form-field-full {
+  display: block;
+  width: 100%;
+}
+
+.form-error {
+  display: block;
+  min-height: 1.1rem;
+  padding-left: 1.9rem;
+  font-size: 0.85rem;
+  color: var(--color-error);
+}
+
+.form-success > p {
+  max-width: 45vw;
+  padding: 1rem 1.3rem;
+  border-radius: 20px;
+  background-color: var(--color-primary-transparent);
+  color: var(--color-text-primary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.form-success .button-container {
+  justify-content: flex-start;
+}
+
+.form-success .button-container > button {
+  width: auto;
+  padding: 0 1.2rem;
 }
 
 .button-container {
@@ -182,6 +222,15 @@
     width: 95%;
   }
 
+  .form-field {
+    display: block;
+    width: 100%;
+  }
+
+  .form-success > p {
+    max-width: 95%;
+  }
+
   .button-container {
     width: 101%;
   }
@@ -213,4 +262,4 @@
   .button-container > button {
     width: 25vw;
   }
-}
+}

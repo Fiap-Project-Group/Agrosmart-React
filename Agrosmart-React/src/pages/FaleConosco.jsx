@@ -1,29 +1,47 @@
 import FaleConoscoIMG from "../assets/images/FaleConosco-image.jpg";
-import Agrobot from "../components/Agrobot/Agrobot"
+import Agrobot from "../components/Agrobot/Agrobot";
 import "../Css/FaleConosco.css";
 import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+
+const schema = yup
+  .object({
+    nome: yup
+      .string()
+      .trim()
+      .required("Conte pra gente como você se chama.")
+      .matches(/^\S{2,}(\s+\S{2,})+$/, "Informe seu nome e sobrenome."),
+    email: yup
+      .string()
+      .required("Informe um e-mail para podermos responder.")
+      .email("Confira o e-mail: ele precisa ter o formato nome@exemplo.com."),
+    mensagem: yup
+      .string()
+      .trim()
+      .required("Escreva sua mensagem.")
+      .min(10, "Escreva um pouco mais (mínimo de 10 caracteres).")
+      .max(500, "Sua mensagem pode ter até 500 caracteres."),
+  })
+  .required();
 
 function FaleConosco() {
-  const [nome, setnome] = useState("")
-  const [enviado , setEnvido] = useState(false)
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({ resolver: yupResolver(schema) });
 
-  function handleSubmit(event){
-    event.preventDefault();
-    const partes = nome.trim().split(/\s+/);
+  const [enviado, setEnviado] = useState(false);
+  const [primeiroNome, setPrimeiroNome] = useState("");
 
-    if (partes.length < 2){
-      alert("Digite nome e sobrenome!");
-      return;
-    }
-    const nomeValido = partes.every((parte) => parte.length >= 2);
-    
-    if (!nomeValido){
-      alert("Nome e sobrenome devem ter pelo menos 2 letras")
-      return;
-    }
-    setnome("");
-    setEnvido(true );
-    console.log("Formulário enviado com sucesso!")
+  function enviarMensagem(dados) {
+    console.log("Mensagem enviada:", dados);
+    setPrimeiroNome(dados.nome.split(" ")[0]);
+    setEnviado(true);
+    reset();
   }
 
   return (
@@ -82,42 +100,61 @@ function FaleConosco() {
             <h3>Mande sua Mensagem</h3>
 
             <div className="form-to-contact">
-              {enviado ? (<p>Formulário enviado com sucesso!</p>): (
-              <form onSubmit={handleSubmit}>
-                <div className="form-input-container">
-                  <input
-                    type="text"
-                    name="Nome"
-                    value={nome}
-                    onChange={(event) => setnome(event.target.value)}
-                    className="form-input"
-                    id="name"
-                    required
-                    placeholder="Digite nome e sobrenome"
-                  />
-               
-                  <input
-                    type="Email"
-                    name="email"
-                    className="form-input"
-                    id="email"
-                    required
-                    placeholder="Informe seu email"
-                  />
-
-                  <input
-                    name="message"
-                    className="text-area-message"
-                    required
-                    maxLength={500}
-                    placeholder="Conte-nos sua mensagem!"
-                  />
-
+              {enviado ? (
+                <div className="form-success">
+                  <p>
+                    Mensagem enviada! Obrigado, {primeiroNome}. Nossa equipe
+                    responde em até 1 dia útil no e-mail informado.
+                  </p>
                   <div className="button-container">
-                    <button type="submit">Enviar</button>
+                    <button type="button" onClick={() => setEnviado(false)}>
+                      Enviar outra
+                    </button>
                   </div>
                 </div>
-              </form>
+              ) : (
+                <form onSubmit={handleSubmit(enviarMensagem)} noValidate>
+                  <div className="form-input-container">
+                    <div className="form-field">
+                      <input
+                        type="text"
+                        {...register("nome")}
+                        className="form-input"
+                        id="name"
+                        placeholder="Nome e sobrenome"
+                      />
+                      <span className="form-error">{errors.nome?.message}</span>
+                    </div>
+
+                    <div className="form-field">
+                      <input
+                        type="email"
+                        {...register("email")}
+                        className="form-input"
+                        id="email"
+                        placeholder="Seu melhor e-mail"
+                      />
+                      <span className="form-error">{errors.email?.message}</span>
+                    </div>
+
+                    <div className="form-field form-field-full">
+                      <textarea
+                        {...register("mensagem")}
+                        className="text-area-message"
+                        id="message"
+                        maxLength={500}
+                        placeholder="Como podemos ajudar?"
+                      />
+                      <span className="form-error">
+                        {errors.mensagem?.message}
+                      </span>
+                    </div>
+
+                    <div className="button-container">
+                      <button type="submit">Enviar</button>
+                    </div>
+                  </div>
+                </form>
               )}
             </div>
           </div>

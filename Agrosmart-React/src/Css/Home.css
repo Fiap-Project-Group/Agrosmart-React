@@ -184,6 +184,36 @@
   font-size: 1.5rem;
 }
 
+.weather-text > .weather-status {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.weather-text > .weather-error {
+  color: var(--color-error);
+  font-style: normal;
+}
+
+.check-icon.fora-ideal {
+  background-color: var(--color-error);
+}
+
+.planting-verdict {
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius-medium);
+  background-color: var(--color-primary-transparent);
+  color: var(--color-primary);
+  font-weight: 700;
+  text-align: center;
+}
+
+.planting-verdict.verdict-alert {
+  background-color: transparent;
+  border: 2px solid var(--color-error);
+  color: var(--color-error);
+}
+
 @media screen and (max-width: 1650px) {
   .section {
     flex-direction: column;

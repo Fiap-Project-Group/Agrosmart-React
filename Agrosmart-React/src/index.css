@@ -36,6 +36,7 @@ body {
   --color-text-primary: #081c15;
   --color-text-secondary: #5c5e5e;
   --color-links: #20c68c;
+  --color-error: #c62828;
 
   /* =========================
        CORES DE FUNDO
@@ -93,6 +94,7 @@ body {
 
   --color-text-primary: #f1f5f2;
   --color-text-secondary: #b8c5be;
+  --color-error: #ff8a80;
 
   --color-white: #14251d;
 
